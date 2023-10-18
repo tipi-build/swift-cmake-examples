@@ -9,6 +9,7 @@ struct HelloWorldStringAccessor {
 
 func display(_ message: String) -> Bool {
   print(message)
+
   return true
 }
 
@@ -18,6 +19,7 @@ func main() {
     print("unable to display message")
     return
   }
+  print ("Building and caching with CMake AND Swift !")
 }
 
 main()

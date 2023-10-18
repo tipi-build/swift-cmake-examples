@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.15.1)
-
 project(hello LANGUAGES Swift)
+enable_testing()
 
 if(CMAKE_SYSTEM_NAME STREQUAL Windows OR CMAKE_SYSTEM_NAME STREQUAL Darwin)
   option(BUILD_SHARED_LIBS "Build shared libraries by default" YES)
@@ -12,3 +12,5 @@ set_target_properties(HiKit PROPERTIES
 
 add_executable(hello hello.swift)
 target_link_libraries(hello PRIVATE HiKit)
+
+add_test(NAME hello COMMAND  $<TARGET_FILE:hello> )

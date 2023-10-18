@@ -1,0 +1,2 @@
+export TIPI_DISTRO_JSON=https://raw.githubusercontent.com/tipi-build/distro/6c9a08e95777683c98cadec55d9f2ee543ffaf92/distro.json
+export TIPI_DISTRO_JSON_SHA1=90987d31a347f5657166e77be3bebbbfef16fa64
